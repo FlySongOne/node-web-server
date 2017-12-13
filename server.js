@@ -73,6 +73,13 @@ app.get('/about',(req,res)=>{
   });  // let you render any of templates you have set up with ur current view 
 });
 
+
+app.get('/projects',(req,res)=>{
+  res.render('projects.hbs', {
+    pageTitle: 'Projects'
+  });
+});
+
 // /bad - send back json with errorMessage
 
 app.get('/bad',(req,res)=>{
